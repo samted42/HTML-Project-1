@@ -1,0 +1,42 @@
+main{
+    display: flex;
+    justify-content: space-around;
+    /* Space out the sections */
+    flex-wrap: wrap;
+    /* Allow sections to wrap on smaller screens */
+    padding: 20px;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center content horizontally */
+    margin: 10px;
+    width: 300px;
+}
+    
+img {
+max-width: 100;
+/* Ensure images are responsive */
+height: auto;
+/* Maintain the aspect ratio */
+
+}
+
+
+ 
+h3{
+    border-style: groove;
+}
+
+
+
+
+
+
+
+
+
+
