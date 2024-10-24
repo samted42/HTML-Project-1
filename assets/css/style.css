@@ -1,10 +1,11 @@
 body {
     width: 860px;
     margin: 0 auto;
-    
+    background-color: lightblue;
 
 }
-main{
+
+main {
     /* display: flex; */
     justify-content: space-around;
     /* Space out the sections */
@@ -12,40 +13,186 @@ main{
     /* Allow sections to wrap on smaller screens */
     padding: 20px;
     margin: auto;
-    
-
 
 }
+
+
+/* Mobile 1st: i.e. designed for single column on a mobile screen */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: DodgerBlue;
+    margin: 0;
+}
+
+img {
+    max-width: 100;
+    /* Ensure images are responsive */
+    height: auto;
+    /* Maintain the aspect ratio */
+
+}
+
+/* Mobile 1st : Default to 1 column */
+.column {
+    width: 45%;
+    float: left;
+    padding: 5px;
+    border: 1px solid purple;
+}
+
 
 section {
+    float: left;
+    border-style: double;
+    text-align: center;
+    align-content: center;
+}
+
+iframe {
+    width: 800px;
+    height: 500px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: blue;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+
+}
+
+.navbar a:hover {
+    background-color: rgb(44, 25, 146);
+
+
+}
+
+.navbar li {
+    float: none;
+
+
+}
+
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    padding: 5px;
+    background-color: #333;
+    color: #efefef;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* Center content horizontally */
-    margin: 10px;
-    width: 300px;
-}
-    
-img {
-max-width: 100;
-/* Ensure images are responsive */
-height: auto;
-/* Maintain the aspect ratio */
 
 }
 
+.footer div {
+    text-align: center;
 
- 
-h3{
-    border-style: groove;
+
+}
+
+.col-2 {
+    flex-grow: 2;
+
 }
 
 
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
 
+}
 
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
 
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
 
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: #fff;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Drop down further to 1 column for smart phone sizes, 100% width */
+@media screen and (max-width: 480px) {
+    .column {
+        width: 100%;
+    }
+}
